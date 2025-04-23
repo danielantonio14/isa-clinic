@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('./head') %>
+
+  <body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Header -->
+      <%- include ('./header') %>
+      <!-- /Header -->
+
+      <!-- Sidebar -->
+      <%- include ('./sidebar') %>
+      <!-- /Sidebar -->
+
+      <!-- Page Wrapper -->
+      <div class="page-wrapper"><%- include('../Pages/'+page_path) %></div>
+      <!-- /Page Wrapper -->
+      <div class="notification-box"><%- include('./notification-box') %></div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <!-- /Main Wrapper -->
+    <%- include ('./script') %>
+  </body>
+</html>
